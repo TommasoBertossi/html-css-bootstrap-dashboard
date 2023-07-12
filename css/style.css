@@ -1,0 +1,29 @@
+:root {
+    --menù-size-sml: 40px; 
+}
+
+div {
+    border: 2px dashed red;
+    min-width: 50px;
+    min-height: 50px;
+    padding: 10px;
+}
+
+
+/* left-menù */
+
+.left-menù .container {
+    width: var(--menù-size-sml);
+    height: 100vh;
+    background-color: #10263d;
+}
+
+/* main-body */
+
+.main-body {
+    width: 100%;
+}
+
+.row * {
+    background-color: #10263d;
+}
