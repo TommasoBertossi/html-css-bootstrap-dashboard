@@ -2,26 +2,30 @@
     --menù-size-sml: 40px; 
 }
 
-div {
+.bordered {
     border: 2px dashed red;
     min-width: 50px;
     min-height: 50px;
     padding: 10px;
 }
 
-
+main {
+    height: calc(100vh - 56px);
+}
 /* left-menù */
 
-.left-menù .container {
-    width: var(--menù-size-sml);
-    height: 100vh;
+.left-menù .container-fluid {
+    /* min-width: var(--menù-size-sml); */
+    height: 100%;
     background-color: #10263d;
+    color: white;
 }
 
 /* main-body */
 
 .main-body {
     width: 100%;
+    background-color: yellow;
 }
 
 .row * {
