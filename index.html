@@ -14,7 +14,7 @@
 </head>
 <body>
     <header id="header">
-        <div class="container bordered">
+        <div class="container-fluid bordered">
             <nav class="navbar navbar-expand-lg bg-light">
                 <div class="container-fluid">
                   <a class="navbar-brand" href="#">Navbar</a>
@@ -58,44 +58,152 @@
             <div class="container-fluid bordered">
                 <div class="box">
                     <i class="bi bi-house-door-fill"></i>
-                    <span>Home</span>
+                    <span class="d-none d-md-inline">Home</span>
                 </div>
                 <div class="box">
                     <i class="bi bi-bar-chart-fill"></i>
-                    <span>Stats</span>
+                    <span class="d-none d-md-inline">Stats</span>
                 </div>
                 <div class="box">
                     <i class="bi bi-reception-4"></i>
-                    <span>Signal</span>
+                    <span class="d-none d-md-inline">Signal</span>
                 </div>
                 <div class="box">
                     <i class="bi bi-gear-fill"></i>
-                    <span class="mt-auto">Admin</span>
+                    <span class="d-none d-md-inline">Admin</span>
                 </div>
             </div>
         </div>
         <!-- MAIN-BODY -->
         <div class="main-body">
             <div class="body-menù">
-                <div class="container-fluid">
-                    <div class="div">Nuovo Studente</div>
-                    <div class="div">Boolean</div>
-                    <div class="div">Studenti online negli ultimi 30 giorni</div>
+                <div class="container-fluid d-flex flex-wrap ">
+                    <div class="col-12 col-sm-4">Nuovo Studente</div>
+                    <div class="col-12 col-sm-4">Boolean</div>
+                    <div class="col-12 col-sm-4">Studenti online negli ultimi 30 giorni</div>
                 </div>
             </div>
-            <div class="container">
-                <div class="container bordered">
+            <div class="body-content">
+                <div class="container-fluid bordered">
                     <div class="row">
-                        <div class="col-12 col-lg-8"></div>
-                        <div class="col-12 col-lg-8"></div>
+                        <div class="col-12 col-lg-7 bordered">
+                            <div class="row">
+                              <div class="col-12">
+                                <div class="card">
+                                  <div class="card-header">
+                                    Prossime classi
+                                  </div>
+                                  <div class="card-body">
+                                    <h5 class="card-title"></h5>
+                                    <table class="table table-hover">
+                                      <thead>
+                                        <tr>
+                                          <th scope="col">Nome</th>
+                                          <th scope="col">Data inizio</th>
+                                          <th scope="col">ROI</th>
+                                          <th scope="col">Stato</th>
+                                          <th scope="col">Azioni</th>
+                                        </tr>
+                                      </thead>
+                                      <tbody>
+                                        <tr>
+                                          <th scope="row">
+                                            <img src="./img/class-avatar.jpg" alt="">
+                                          </th>
+                                          <td>15 Feb 2021</td>
+                                          <td>20%</td>
+                                          <td>
+                                            <button type="button" class="btn btn-success btn-sm">Done</button>
+                                          </td>
+                                          <td>
+                                            <div class="d-grid gap-2 d-flex justify-content-end">
+                                              <button class="btn btn-secondary me-md-2" type="button">
+                                              <i class="bi bi-pencil-fill"></i>
+                                            </button>
+                                              <button class="btn btn-secondary" type="button">
+                                              <i class="bi bi-trash-fill"></i>
+                                              </button>
+                                            </div>
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <th scope="row">
+                                            <img src="./img/class-avatar.jpg" alt="">
+                                          </th>
+                                          <td>15 Feb 2021</td>
+                                          <td>20%</td>
+                                          <td>
+                                            <button type="button" class="btn btn-success btn-sm">Done</button>
+                                          </td>
+                                          <td>
+                                            <div class="d-grid gap-2 d-flex justify-content-end">
+                                              <button class="btn btn-secondary me-md-2" type="button">
+                                              <i class="bi bi-pencil-fill"></i>
+                                            </button>
+                                              <button class="btn btn-secondary" type="button">
+                                              <i class="bi bi-trash-fill"></i>
+                                              </button>
+                                            </div>
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <th scope="row">
+                                            <img src="./img/class-avatar.jpg" alt="">
+                                          </th>
+                                          <td>15 Feb 2021</td>
+                                          <td>20%</td>
+                                          <td>
+                                            <button type="button" class="btn btn-success btn-sm">Done</button>
+                                          </td>
+                                          <td>
+                                            <div class="d-grid gap-2 d-flex justify-content-end">
+                                              <button class="btn btn-secondary me-md-2" type="button">
+                                              <i class="bi bi-pencil-fill"></i>
+                                            </button>
+                                              <button class="btn btn-secondary" type="button">
+                                              <i class="bi bi-trash-fill"></i>
+                                              </button>
+                                            </div>
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-12"></div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-5 bordered">
+                            <div class="row">
+                              <div class="col-12">
+                                <div class="card">
+                                  <div class="card-header">
+                                    Todo
+                                  </div>
+                                  <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">Kickoff nuove classi</li>
+                                    <li class="list-group-item">Lezione su Bootstrap 5 in classe #75</li>
+                                    <li class="list-group-item">Controllare username github studenti</li>
+                                  </ul>
+                                </div>
+                              </div>
+                              <div class="col-12">
+                                <div class="card mb-3">
+                                  <img src="./img/stats.jpeg" alt="">
+                                  <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                  </div>
+                                
+                              </div>
+                            </div>
+                        </div>
                     </div>
+                 >
                 </div>
-                <div class="container bordered">
-                    <div class="row">
-                        <div class="col-12 col-lg-4"></div>
-                        <div class="col-12 col-lg-4"></div>
-                    </div>
-                </div>
+                
             </div>
         </div>
     </main>

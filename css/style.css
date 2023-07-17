@@ -2,6 +2,8 @@
     --menù-size-sml: 40px; 
 }
 
+
+
 .bordered {
     border: 2px dashed red;
     min-width: 50px;
@@ -12,10 +14,17 @@
 main {
     height: calc(100vh - 56px);
 }
+
+img {
+    max-width: 10%;
+}
 /* left-menù */
 
+.left-menù {
+    width: 40px;
+}
+
 .left-menù .container-fluid {
-    /* min-width: var(--menù-size-sml); */
     height: 100%;
     background-color: #10263d;
     color: white;
@@ -23,6 +32,11 @@ main {
 
 /* main-body */
 
+
+.col-12 {
+    min-height: 50px;
+    
+}
 .main-body {
     width: 100%;
     background-color: yellow;
@@ -33,6 +47,15 @@ main {
     height: 100px;
 }
 
-.row * {
+/* .row * {
     background-color: #10263d;
+} */
+
+
+/* MEDIA QUERY */
+
+@media screen and (min-width: 768px) {
+    .left-menù {
+        width: 200px;
+    }
 }
